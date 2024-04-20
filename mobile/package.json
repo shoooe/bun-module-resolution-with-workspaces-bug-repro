@@ -6,8 +6,7 @@
   "scripts": {
     "tsc": "tsc --noEmit"
   },
-  "dependencies": {
-  },
   "devDependencies": {
+    "@repo/server": "workspace:*"
   }
 }
