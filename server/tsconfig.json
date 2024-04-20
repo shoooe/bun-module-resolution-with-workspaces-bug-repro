@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "paths": {
+      "~/*": ["*"]
+    }
+  },
+  "extends": ["../tsconfig.json"],
+  "include": ["./src/**/*.ts", "./eslint.config.js"],
+  "exclude": ["./node_modules", "dist"]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "self",
+  "private": true,
+  "workspaces": [
+    "server",
+    "mobile"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prettier": "3.2.5",
+    "typescript": "5.4.5"
+  },
+  "scripts": {
+    "tsc": "concurrently -c 'blue,green' '(cd server && bun tsc)' '(cd mobile && bun tsc)'",
+    "clean": "rm -f bun.lockb && find . -type d -name \"node_modules\" -exec rm -rf {} +"
+  }
+}
